@@ -1,0 +1,54 @@
+/* archivos CSS importados */
+@import url(../css/normalize.min.css);
+
+/* Fonts de la web */
+@font-face {
+    font-family: "helvetica_neue";
+    font-weight: 400;
+    src: url(../font/helveticaneuemedium.woff2) format("woff2"),
+        url(../font/helveticaneuemedium.woff) format("woff");
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+html {
+    font-family: "helvetica_neue", sans-serif;
+    font-size: 16px;
+}
+
+/* Variables */
+:root {
+    --color-fondo: #f1f1f1;
+    --color-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    --spacing-radius: 10px;
+}
+
+/* Estilos de la web */
+body {
+    background: var(--color-fondo);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.rectangulo {
+    padding: 30px 20px;
+    border-radius: var(--spacing-radius);
+    background: #fff;
+    box-shadow: var(--color-shadow);
+
+    & .rectangulo__titulo {
+        font-size: 32px;
+    }
+    & .rectangulo__subtitulo {
+        font-size: 16px;
+    }
+}
